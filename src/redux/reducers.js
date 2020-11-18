@@ -88,6 +88,8 @@ export function reducer(state, action) {
         total: (state.total -= 1),
         health: (state.health -= healthDec),
       };
+
+    default:
+      return state;
   }
-  return state;
 }
